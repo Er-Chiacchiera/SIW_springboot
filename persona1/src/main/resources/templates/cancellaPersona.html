@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<!--<link href="/css/my-style.css" rel="stylesheet">-->
+	<title>cancella persona</title>
+</head>
+<body>
+	<div>
+		<h4>Sei sicuro di voler eliminare:</h4>
+		<div>
+			<span th:text="${persona.nome}">Paolo</span>
+			<span th:text="${persona.cognome}">Rossi</span>
+			<span th:text="${persona.eta}">55 </span>
+		</div>
+		<div>
+			<a th:href="@{'/toDeletePersona' + '/' + ${persona.id}}" th:text="Si">si</a>
+			<a th:href="@{'/persone'}" th:text="No">no</a>
+		</div>
+	</div>
+	<footer>
+		<a href="/">Home</a>
+	</footer>
+</body>
+</html>

@@ -11,7 +11,7 @@
 			<li th:each="persona : ${persone}"><a href="persona.html"
 				th:href="@{'/persona' + '/' + ${persona.id}}"
 				th:text="${persona.nome} + ' ' + ${persona.cognome}">Paolo Rossi</a>
-				<a th:href="@{'/toDeletePersona' + '/' + ${persona.id}}" th:text="cancella">cancella</a>
+				<a th:href="@{'/wantToDeletePersona' + '/' + ${persona.id}}" th:text="cancella">cancella</a>
 			</li>
 		</ul>
 
